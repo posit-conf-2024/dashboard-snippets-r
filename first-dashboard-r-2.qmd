@@ -1,0 +1,13 @@
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
